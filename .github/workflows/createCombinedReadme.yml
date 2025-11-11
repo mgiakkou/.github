@@ -35,7 +35,6 @@ jobs:
           if [ -n "$(git status --porcelain)" ]; then
             git config --global user.name "github-actions[bot]"
             git config --global user.email "github-actions[bot]@users.noreply.github.com"
-            mv COMBINED_README.md README.md
             git add README.md
             git commit -m "Auto-update combined README [skip ci]"
             git push
