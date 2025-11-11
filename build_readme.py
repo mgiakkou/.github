@@ -8,7 +8,7 @@ source_file = "README_BASE.md"
 output_file = "README.md"
 
 markdown = MarkdownInclude(config)
-combined_text = markdown.read_file(source_file)
+combined_text = markdown.markdown(source, extensions=[markdown_include])
 
 with open(output_file, "w", encoding="utf-8") as f:
     f.write(combined_text)
