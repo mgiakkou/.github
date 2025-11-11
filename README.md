@@ -4,5 +4,5 @@
 
 ## Readme continuation
 
-This is a test to check readme file genration
+This is a test to check readme file generation
 
