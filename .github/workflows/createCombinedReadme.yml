@@ -28,7 +28,7 @@ jobs:
       - name: Combine Markdown files
         run: |
           # Assuming you have a build config file called 'markdown_include.yml'
-          python -m markdown_include README_BASE.md > README.md
+          python build_readme.py
 
       - name: Commit and push updated README
         run: |
