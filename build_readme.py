@@ -4,11 +4,11 @@ config = {
     "base_path": "."
 }
 
-source_file = "README.md"
-output_file = "COMBINED_README.md"
+source_file = "README_BASE.md"
+output_file = "README.md"
 
 markdown = MarkdownInclude(config)
-combined_text = markdown.read(source_file)
+combined_text = markdown.read_file(source_file)
 
 with open(output_file, "w", encoding="utf-8") as f:
     f.write(combined_text)
